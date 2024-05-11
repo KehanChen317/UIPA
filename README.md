@@ -3,7 +3,7 @@ This is the code respository of **UIPA**, which is a cross-platform recommendati
 
 The repository contains the following contents:
 
-1. **Datasets**: This folder contains the datasets files necessary to run the code.
+1. **Datasets**: This folder contains the dataset files necessary to run the code.
 2. **Models**: This folder contains the models that have been trained.
 
 ## 1 Setup
@@ -29,5 +29,5 @@ If you want to skip the training part and use the trained model, you can utilize
 python main.py --pretrained_model=1
 ```
 
-## 3 Parameter setting
-All the parameters along with their descriptions are shown in `parse.py`.
+## 3 Parameters setting
+All the parameters along with their descriptions are in `parse.py`. You can also run UIPA with any combination of parameters you want.
