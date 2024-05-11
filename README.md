@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce2600466b337d85ef9205e149f67e6e1831be9a2dbdadc8549d7ea7222e8f92
-size 6
+# UIPA
+This is the code respository of **UIPA**, which is a cross-platform recommendation framework based on user and item prototype alignment. 
+The repository contains the following contents:
+1. Datasets:
+2. Models:
