@@ -12,8 +12,8 @@ Due to the large size of the data files, we use Git LFS to store them. you can u
 # Initialize LFS
 git lfs install
 
-# Download this repository by LFS
-git lfs clone # address of this repository
+# Download this repository by LFS. The address of this repository will be announced once the paper is accepted.
+git lfs clone # the address of this repository
 ```
 
 ## 2 Setup
