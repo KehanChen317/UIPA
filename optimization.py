@@ -90,7 +90,6 @@ def minibatch(*tensors, batch_size):
 
 
 def Train_on_epoch(Recmodel, config, dictBank):
-    reg_loss_weight = config['reg_loss_weight']
     prototype_loss_weight = config['prototype_loss_weight']
     aver_loss, aver_pre_loss, aver_reg_loss, aver_prototype_loss = 0., 0., 0., 0.
     total_batch = 0
@@ -124,7 +123,7 @@ def Train_on_epoch(Recmodel, config, dictBank):
         Recmodel.batch_i = batch_i
         pre_loss, reg_loss, prototype_loss = Recmodel.getLoss(u.cuda(), v_p.cuda(), v_n.cuda(), is_target)
 
-        reg_loss = reg_loss * reg_loss_weight
+        reg_loss = reg_loss * 0.0005 # reg loss weight
         prototype_loss = prototype_loss * prototype_loss_weight
         loss = pre_loss + reg_loss + prototype_loss
 
@@ -164,7 +163,7 @@ def Train_on_epoch(Recmodel, config, dictBank):
         Recmodel.batch_i = batch_i
         pre_loss, reg_loss, prototype_loss = Recmodel.getLoss(u.cuda(), v_p.cuda(), v_n.cuda(), is_target)
 
-        reg_loss = reg_loss * reg_loss_weight
+        reg_loss = reg_loss * 0.0005 #reg loss weight
         prototype_loss = prototype_loss * prototype_loss_weight
         loss = pre_loss + reg_loss + prototype_loss
 
